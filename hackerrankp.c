@@ -1,0 +1,59 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,k,n;
+	printf("enter digit:  ");
+	scanf("%d",&n);
+	for(i=n;i>=1;i--)
+	{
+		for(j=n;j>=1;j--)
+		{
+			if(i>=j)
+			{
+				printf("%d",i);
+			}
+			else
+			{
+				printf("%d",j);
+			}
+		}
+		for(k=2;k<=n;k++)
+		{
+			if(i>=k)
+			{
+				printf("%d",i);
+			}
+			else
+			{
+				printf("%d",k);
+			}
+		}
+		printf("\n");
+	}
+	for(i=2;i<=n;i++)
+	{
+		for(j=n;j>=1;j--)
+		{
+			if(j>i)
+			{
+				printf("%d",j);
+			}
+			else
+			{
+				printf("%d",i);
+			}
+		}
+		for(k=2;k<=n;k++)
+		{
+			if(k>=i)
+			{
+				printf("%d",k);
+			}
+			else
+			{
+				printf("%d",i);
+			}
+		}
+		printf("\n");
+	}
+}
